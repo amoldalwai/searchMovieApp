@@ -17,7 +17,7 @@ const Detail = (props) => {
   const [plot, setplot] = useState();
   const [title, settitle] = useState();
   const [imdbrate, setimdbrate] = useState();
-  const [metascore, setmetascore] = useState();
+ 
 
   axios
     .get(`https://www.omdbapi.com/?apikey=4eb65943&i=${props.imval}`)
@@ -28,7 +28,7 @@ const Detail = (props) => {
       setplot(res.data.Plot);
       settitle(res.data.Title);
       setimdbrate("Imdb: " + res.data.imdbRating);
-      setmetascore("Metascore: " + res.data.Metascore);
+      
     });
 
   const handleClose = () => {
@@ -60,11 +60,7 @@ const Detail = (props) => {
             <span style={{ fontSize: "12px" }}>
               {genre} <b>{year}</b>
             </span>
-            <Chip
-              label={metascore}
-              color="secondary"
-              style={{ float: "right" }}
-            />
+           
             <Chip label={imdbrate} color="primary" style={{ float: "right" }} />
             <hr />
             <span>{plot}</span>
