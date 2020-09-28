@@ -9,6 +9,7 @@ A Movie App built using React js , Material UI  &  OMDb  API  that allows search
 
 ![GitHub top language](https://img.shields.io/github/languages/top/amoldalwai/searchMovieApp?style=plastic)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/amoldalwai/searchMovieApp?style=plastic)
+![npm](https://img.shields.io/npm/v/npm?color=green)
 ![Website](https://img.shields.io/website?style=plastic&url=https%3A%2F%2Famoldalwai.github.io%2FsearchMovieApp%2F)
 
 #### Table of Contents  
